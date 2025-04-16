@@ -1,0 +1,88 @@
+/* CustomerSummary.css */
+
+.customer-summary {
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer-summary h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.customer-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.customer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.customer-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e40af;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.customer-button:hover {
+  color: #1c3faa;
+}
+
+.customer-entries {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.customer-entry-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: #4a5568;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+/* Responsive layout tweak */
+@media (max-width: 600px) {
+  .customer-card {
+    padding: 0.75rem;
+  }
+
+  .customer-button {
+    font-size: 1rem;
+  }
+
+  .customer-summary h2 {
+    font-size: 1.4rem;
+  }
+
+  .customer-entry-card {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+}

@@ -1,0 +1,151 @@
+/* App.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full page height */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+/* Scroll if content overflows on small screens */
+body {
+  overflow-y: auto;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="month"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Layout helpers */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.sm\\:flex-row {
+  flex-direction: row;
+}
+
+.gap-2 {
+  gap: 12px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Cards for entries */
+.card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+button.text-blue-600 {
+  background-color: #e6f0ff;
+  color: #1e40af;
+}
+
+button.text-blue-600:hover {
+  background-color: #d6e8ff;
+}
+
+button.text-red-600 {
+  background-color: #ffe6e6;
+  color: #b91c1c;
+}
+
+button.text-red-600:hover {
+  background-color: #ffd6d6;
+}
+
+.theme-toggle {
+  font-weight: bold;
+  color: #555;
+  background-color: #eee;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: #ddd;
+}
+
+/* EntryList wrapper (centered) */
+.entry-list-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 0;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .sm\\:flex-row {
+    flex-direction: column;
+  }
+}
